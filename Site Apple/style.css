@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    margin: 3px;
+    flex: 1 1 100vw;
+}
+
+header{
+    display: flex;;
+    font-display: flex;
+    justify-content: space-between;
+    background-color: gray;
+}
+
+nav {
+    display: flex;
+    margin: 3px;
+    flex: 20 1 500px;
+    background-color: gray;
+    height: calc(100vh - 224px);
+}
+
+main {
+    display: flex;
+    margin: 3px;
+    flex: 20 1 500px;
+    background-color: gray;
+}
+
+aside {
+    display: flex;
+    margin: 3px;
+    flex: 1 1 200px;
+    background-color: gray;
+}
+
+footer{
+    display: flex;
+    margin: 3px;
+    flex: 1 1 100vw;
+    background-color: gray;
+}
+@media only screen and (max-wid)
+
+img#compras{
+    width: 20px;
+    display: flex;
+    padding-left: 2em;
+}
+
+img#apple{
+    width: 24px;
+    display: flex;
+}
+img#lupa{
+    width: 18px;
+    display: flex;
+    padding-left: 2rem;
+}
+ul{
+    display: flex;
+    margin: 23px;
+}
+
+ul p a{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 2rem;
+}
+
+.menu{
+    justify-content: center;
+}
