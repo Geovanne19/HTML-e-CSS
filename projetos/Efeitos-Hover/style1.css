@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*estudar */
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(30, 30, 30);
+}
+
+header {
+    height: 300px;
+    width: 100%;
+    margin-top: -300px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.trilho {
+    height: 40px;
+    width: 80px;
+    background-color: gray;
+    border: 3px solid gray;
+    border-radius: 150px;
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.300);
+    position: relative;
+    left: 40px; /*estudar */
+
+}
+.trilho .indicador {
+    background-color: black;
+    height: 32.5px;
+    width: 32.5px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.300);
+    cursor: pointer;
+    position: absolute;
+    transition: .5s; /*estudar */
+}
+.trilho.dark {
+    background-color: rgb(180, 180, 180);
+}
+.trilho.dark .indicador {
+    left: 41px; 
+    background-color: white;
+    animation: moveIndicator .5s; /*estudar */
+}
+body.dark {
+    background-color: lightgray;
+    transition: all 1s;
+}
+@keyframes moveIndicator {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 41px;
+    }
+}
+
+section {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+#section-1 > .link {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.397);
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-size: 55px;
+    position: relative;
+    overflow: hidden; /*estudar */
+}
+
+#section-1 > .link:hover i{
+    color: white;
+    transform: scale(1.2); /*estudar */
+    transition: all .3s ;
+}
+
+#section-1 > .link-1 {
+    color: #ff5500;
+}
+#section-1 > .link-2 {
+    color: #00aaff;
+}
+#section-1 > .link-3 {
+    color:#ff0088;
+}
+
+#section-1 > .link-1::before {
+    background-color: #ff5500;
+}
+
+#section-1 > .link-2::before {
+    background-color: #00aaff;
+}
+
+#section-1 > .link-3::before {
+    background-color: #ff0088;
+}
+
+#section-1 > .link::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+    position: absolute;
+    left: -100px;
+    top: 100%;
+}
+#section-1 > .link:hover::before {
+    animation: desloca .6s;
+    left: 0;
+    top: 0;
+}
+
+@keyframes desloca {
+    0% {
+        left: -100px;
+        top: 100%
+    }
+    50% {
+        left: 15%;
+        top: -25%;
+    }
+    100% {
+        left: 0;
+        top: 0;
+    }
+}

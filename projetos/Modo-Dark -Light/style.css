@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Share+Tech+Mono&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30, 30, 30);
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.trilho {
+    height: 150px;
+    width: 300px;
+    background-color: gray;
+    border: 5px solid gray;
+    border-radius: 150px;
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.300);
+    position: relative;
+}
+.trilho .indicador {
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.300);
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+.trilho.dark {
+    background-color: rgb(180, 180, 180);
+}
+.trilho.dark .indicador {
+    left: 150px; 
+    background-color: white;
+    animation: left 1s;
+}
+body.dark {
+    background-color: lightgray;
+}
+body.dark h1 {
+    color: black;
+}

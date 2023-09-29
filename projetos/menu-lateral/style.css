@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+body {
+    background-color: rgb(43, 43, 43);
+    height: 100vh;
+}
+
+.menu {
+    background-color: rgb(15, 15, 15);
+    height: 100vh;
+    width: 300px;
+    border-right: 5px solid purple;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.438);
+}
+
+nav > div > i {
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-left: 20px;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    transform-origin: center; /*estudar */
+    transform: rotate(90deg);
+    cursor: pointer;
+    margin: 10px 30px 20px;
+}
+nav > button:hover {
+    background-color: purple;
+    transform: scale(102%);
+    transition: all 0.5s;
+    transform: rotate(90deg);
+}
+
+.foto-nome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+.foto-nome:hover {
+    transform: scale(102%);
+    transition: all 0.5s;
+    background-color: purple;
+}
+.foto-nome > p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#foto-perfil {
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.barra {
+    background-color: white;
+    height: 2px;
+    width: 275px;
+    margin: 12.5px;
+    border-radius: 5px;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 15px;
+}
+.opcoes > a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 15px 15px 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.514);
+    border-radius: 5px;
+}
+
+.opcoes > a:hover {
+    background-color: purple;
+    transform: scale(102%);
+    transition: all .5s;
+}
+
