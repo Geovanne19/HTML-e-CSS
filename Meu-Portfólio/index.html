@@ -4,29 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/style-home.css">
+    <link rel="stylesheet" href="estilos/style-sec2.css">
     <script src="script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    <header>
-        <img src="estilos/imagens/logo.png" alt="logo">
-        <nav>
-            <a href="#">Home</a>
+    <header class="header">
+        <button id="btn-hamb" onclick="sidebar()">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+        </button>
+        <nav class="navbar">
+            <a href="#" class="ativo">Home</a>
             <a href="#">Sobre</a>
-            <a href="#">Portfólio</a>
-            <a href="#" id="botao-contato">Contato</a>
+            <a href="#">Skills</a>
+            <a href="#">Projetos</a>
+            <a href="#" id="btn-contato">Contato</a>
         </nav>
     </header>
-    <main>
-        <section>
-            <h1>Olá,</h1>
-            <h2>&#8212 Eu sou Geovanne</h2>
-            <p>Desenvolvedor Front-End</p>
-            <input type="button" value="Download CV">
+
+    <section class="home" id="home">
+        <div class="home-cont">
+            <h1>Olá, eu sou <span>Geovanne</span></h1>
+            <div class="texto-animado">
+                <h3>Desenvolvedor Front-end</h3>
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab libero veniam, enim recusandae nobis totam eius et vitae illo aspernatur esse deleniti quasi perspiciatis dolorem qui quaerat. Ut, doloribus sed.</p>
+            <div class="btn-box">
+                <a href="#" class="btn">Download CV</a>
+            </div>
+        </div>
+        <img src="estilos/imagens/Projeto (Foto de Perfil) - Png (1).png" id="foto-principal">
+    </section>
+
+    <section class="sec2">
+        <section class="sobre" id="sobre">
+            <h2 class="titulo">Sobre <span>Mim</span></h2>
+        
+            <div class="img-sobre">
+                <img src="estilos/imagens/img-sobre.jpg" alt="">
+                <span class="circulo-animado"></span>
+            </div>
+        
+            <div class="cont-sobre">
+                <h3>Desenvolvedor Front End</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iusto est esse voluptatibus libero in quos
+                    commodi, dolorum voluptatum veniam corporis voluptate rem, enim explicabo iste doloremque omnis debitis
+                    eligendi natus dignissimos ipsum pariatur quidem error. Praesentium magni, eos soluta atque dolorum quam,
+                    accusamus vero voluptatem ducimus magnam, minus voluptatibus.</p>
+        
+                <div class="btn-box btns">
+                    <a href="#" class="btn">Leia Mais</a>
+                </div>
+            </div>
         </section>
-        <figure id="img">
-        </figure>
-    </main>
-    <section class="sec2"></section>
+    </section>
+
+    <section class="skills-container" id="skills">
+        <section class="skills">
+            <h2 class="titulo">Skills</h2>
+            
+
+            <div class="skills-row">
+                <div class="skills-column">
+                    <h3 class="title">Coding Skills</h3>
+
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>HTML <span>90%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>CSS <span>80%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            
+                            <div class="progress">
+                                <h3>Java Script <span>65%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>Type Script <span>10%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-column">
+                    <h3 class="title">Professional Skills</h3>
+                
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>Web Design <span>90%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                
+                            <div class="progress">
+                                <h3>Desenvolvimento Web <span>80%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                
+                            <div class="progress">
+                                <h3>Java Design Gráfico <span>65%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                
+                            <div class="progress">
+                                <h3>SEO Marketing <span>10%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="projetos">
+        <h2 class="titulo">Projetos</h2>
+    </section>
+
+    <section class="contato-container">
+        <section class="contato">
+            <h2 class="titulo">Contato</h2>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Geovanne Rodrigues | Todos os Direitos Reservados</p>
+        </div>
+
+        <footer class="footer-iconTop">
+                <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+            </footer>
+    </footer>
 </body>
 </html>
