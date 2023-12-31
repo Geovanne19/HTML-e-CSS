@@ -1,4 +1,4 @@
-function vira_seta (index) {
-    const seta = document.querySelector(".seta");
-    seta.classList.toggle("ativo")
+function vira_seta (element) {
+    var setaElement = element.querySelector('.seta');
+    setaElement.classList.toggle('ativo');
 }

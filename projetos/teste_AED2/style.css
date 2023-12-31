@@ -46,6 +46,7 @@ h1 {
     background-color: transparent;
     color: rgba(0, 0, 0, 0.473);
     font-size: 2rem;
+    transition: .3s;
 }
 
 .seta.ativo {
