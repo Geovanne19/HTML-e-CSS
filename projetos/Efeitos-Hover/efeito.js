@@ -1,14 +1,12 @@
 var btns = document.querySelectorAll/*estudar */('.btn');
 
-btns.forEach/*estudar */(function(btn) {
-    btn.onmousemove = function(e){
-        var x = e.pageX - btn.offsetLeft/*estudar */;
-        var y = e.pageY - btn.offsetTop;
+btn.onmousemove = function(e){
+    var x = e.pageX - btn.offsetLeft/*estudar */;
+    var y = e.pageY - btn.offsetTop;
 
-        btn.style.setProperty('--eixoX', x + 'px');
-        btn.style.setProperty('--eixoY', y + 'px');
-    }
-});
+    btn.style.setProperty('--eixoX', x + 'px');
+    btn.style.setProperty('--eixoY', y + 'px');
+}
 
 let trilho = document.getElementById('trilho')
 let body = document.querySelector('body')
