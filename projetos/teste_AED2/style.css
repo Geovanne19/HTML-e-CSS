@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    border: px solid red;
 }
 html {
     background-color: rgb(197, 197, 197);
@@ -40,6 +41,15 @@ h1 {
     cursor: pointer;
 }
 
+.funcoes.exposto {
+    flex-direction: column;
+}
+
+.cabecalho-funcao {
+    display: flex;
+    align-items: center;
+}
+
 .seta {
     text-decoration: none;
     border: none;
@@ -49,7 +59,17 @@ h1 {
     transition: .3s;
 }
 
-.seta.ativo {
+.seta.exposto {
     transform: rotate(90deg);
 }
 
+.oculto {
+    display: none;
+    flex-direction: column;
+    transition: 1s;
+}
+
+.oculto.exposto {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,4 +1,10 @@
-function vira_seta (element) {
-    var setaElement = element.querySelector('.seta');
-    setaElement.classList.toggle('ativo');
+function ativar_funcao (elemento) {
+    var seta = elemento.querySelector('.seta')
+    var funcoes = elemento.querySelector('.funcoes');
+    var oculto = elemento.querySelector('.oculto');
+
+    oculto.classList.toggle('exposto');
+    seta.classList.toggle('exposto');
+    funcoes.classList.toggle('exposto')
+    
 }
