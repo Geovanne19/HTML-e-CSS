@@ -79,9 +79,10 @@ h2 {
     border: none;
     background-color: transparent;
     color: #7D7F8C;
-    font-size: 2rem;
+    font-size: 1.4rem;
     transition: .3s;
     margin-right: 4px;
+    margin-top: -1px;
 }
 
 .seta.exposto {
@@ -96,7 +97,8 @@ h2 {
 }
 
 .cabecalho-funcao {
-    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .oculto.exposto {
