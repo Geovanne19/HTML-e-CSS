@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
 :root {
     --fundo-escuro: #191A21;
     --fundo-claro: #282A36;
@@ -87,7 +89,7 @@ h2 {
 }
 
 .oculto {
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 8px;
     position: relative;
@@ -125,14 +127,9 @@ button {
     margin: 0;
     text-decoration: none;
     background: none;
-    cursor:text;
-    display: flex;
-    align-items: center;
-    color: var(--cor-comentario);
-    transition: .3s;
 }
 
-button > i {
+button  .bx-play {
     color: var(--cor-comentario);
     font-size: 1.5rem;
     border: 1px solid var(--cor-comentario);
@@ -145,7 +142,6 @@ button > i {
     cursor: pointer;
     transition: .3s;
     font-size: 1rem;
-    font-weight: 800;
 }
 button > i:hover {
     color: var(--verde);
