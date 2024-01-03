@@ -50,7 +50,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 .funcoes {
@@ -79,10 +79,11 @@ h2 {
     border: none;
     background-color: transparent;
     color: #7D7F8C;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     transition: .3s;
     margin-right: 4px;
-    margin-top: -1px;
+    display: flex;
+    align-items: center;
 }
 
 .seta.exposto {
