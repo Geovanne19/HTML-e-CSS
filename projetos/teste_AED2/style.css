@@ -1,20 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 
+:root {
+    --fundo-escuro: #191A21;
+    --fundo-claro: #282A36;
+    --rosa: #F277C7;
+    --verde: #50F268;
+    --amarelo: #EFF288;
+    --roxo: #BD93F9;
+    --laranja: #F2AA6B;
+    --cor-de-texto: #F8F8D4;
+    --cor-comentario: #657BA6;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: Consolas,'Courier New', monospace;
+    font-weight: 400;
     border: px solid red;
+    color: var(--cor-de-texto);
 }
 html {
-    background-color: rgb(197, 197, 197);
+    background-color: var(--fundo-claro);
     height: 100%;
-    font-size: 62.5%;
+    font-size: 75%;
 }
 
 body {
-    background-color: white;
+    background-color: var(--fundo-escuro);
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -28,17 +42,25 @@ body {
 
 h1 {
     font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--rosa);
+}
+
+h2 {
+    font-size: 1.4rem;
 }
 
 .funcoes {
-    background-color: rgb(197, 197, 197);
+    background-color: var(--fundo-claro);
     padding: 4px 8px;
     width: 70%;
     border-radius: 10px;
     display: flex;
-    align-items: center;
     gap: .4rem;
     cursor: pointer;
+    position: relative;
+    flex-direction: column;
 }
 
 .funcoes.exposto {
@@ -54,9 +76,10 @@ h1 {
     text-decoration: none;
     border: none;
     background-color: transparent;
-    color: rgba(0, 0, 0, 0.473);
+    color: #7D7F8C;
     font-size: 2rem;
     transition: .3s;
+    margin-right: 4px;
 }
 
 .seta.exposto {
@@ -64,12 +87,67 @@ h1 {
 }
 
 .oculto {
-    display: none;
+    display: flex;
     flex-direction: column;
-    transition: 1s;
+    padding: 8px;
+    position: relative;
+}
+
+.cabecalho-funcao {
+    position: relative;
 }
 
 .oculto.exposto {
     display: flex;
-    flex-direction: column;
+}
+
+.tfuncao {
+    color: var(--verde);
+}
+
+.tparametros {
+    color: var(--laranja);
+}
+
+.tdocumentacao {
+    color: var(--cor-comentario);
+}
+
+.container-run{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    background: none;
+    cursor:text;
+    display: flex;
+    align-items: center;
+    color: var(--cor-comentario);
+    transition: .3s;
+}
+
+button > i {
+    color: var(--cor-comentario);
+    font-size: 1.5rem;
+    border: 1px solid var(--cor-comentario);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 1rem;
+    font-weight: 800;
+}
+button > i:hover {
+    color: var(--verde);
+    border: 1px solid var(--verde);
 }
