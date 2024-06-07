@@ -25,6 +25,7 @@ html {
     align-items: center;
     flex-direction: column;
     position: relative;
+    gap: 5%;
 }
 
 .container h1 {
@@ -38,6 +39,12 @@ html {
 
 .box-min-escolhas {
     display: flex;
+}
+
+.box-inputs {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }
 
 .box-inputs input {
