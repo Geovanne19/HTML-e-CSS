@@ -12,7 +12,6 @@ html {
     background-repeat: no-repeat;
     background-position: center bottom;
     height: 100%;
-    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +39,11 @@ html {
 
 .container > p {
     position: absolute;
-    bottom: 50px;
+    bottom: 55px;
+}
+
+.container > p > a {
+    text-decoration: none;
 }
 
 .box-escolhas {
@@ -61,15 +64,15 @@ html {
     flex-direction: column;
     margin: 10px;
     width: 100%;
-    font-size: 90%;
+    font-size: 80%;
 }
 
 .box-inputs input {
     padding: 7px;
     border-color: white;
     border: none;
-    border-bottom: 1px solid black;
-    margin-bottom: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.226);
+    margin-bottom: 20px;
     font-size: 16px;
 }
 
@@ -86,4 +89,5 @@ button {
     color: white;
     cursor: pointer;
     margin-top: -10px;
+    width: 100%;
 }
