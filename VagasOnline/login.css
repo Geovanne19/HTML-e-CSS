@@ -44,6 +44,8 @@ html {
 
 .container > p > a {
     text-decoration: none;
+    color: #5d66d3;
+    font-weight: 500;
 }
 
 .box-escolhas {
@@ -58,6 +60,7 @@ html {
     width: 100%;
     gap: 3px;
 }
+
 
 .box-inputs {
     display: flex;
@@ -88,6 +91,6 @@ button {
     font-size: 17px;
     color: white;
     cursor: pointer;
-    margin-top: -10px;
+    margin-top: 10px;
     width: 100%;
 }

@@ -11,12 +11,12 @@
         <h1>Login</h1>
         <div class="box-escolhas">
             <div class="box-min-escolhas">
-                <input type="radio" name="alternate">
-                <p>Candidato</p>
+                <input type="radio" id="candidato" name="alternate">
+                <label for="candidato">Candidato</label>
             </div>
             <div class="box-min-escolhas">
-                <input type="radio" name="alternate">
-                <p>Empresa</p>
+                <input type="radio" id="empresa" name="alternate">
+                <label for="empresa">Empresa</label>
             </div>
         </div>
         <form class="box-inputs" method="post" action="http://127.0.0.1:8080/cadastro">
@@ -24,8 +24,8 @@
             <input type="text" placeholder="Escreva seu usuário">
             <p>Senha</p>
             <input type="password" placeholder="Escreva sua senha">
+            <button>Entrar</button>
         </form>
-        <button>Entrar</button>
         <p>Não tem conta? <a href="#">Cadastre-se</a></p>
     </div>
 </body>
