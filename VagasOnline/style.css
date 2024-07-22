@@ -8,6 +8,10 @@
     --fonte-padrao: "Poppins";
 }
 
+html {
+    overflow-x: hidden;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -22,12 +26,28 @@ header {
     justify-content: space-around;
     align-items: center;
 }
+.botoes-header {
+    display: flex;
+    gap: 10%;
+}
 
 header a {
     text-decoration: none;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
+    text-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: #626CDE;
+}
+
+header a:first-child {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
 }
 
 .pesquisa {
@@ -38,11 +58,14 @@ header a {
     flex-direction: column;
     padding: 15px 350px;
     position: relative;
+    overflow: hidden;
+    background-color: #626CDE;
 }
 
 .pesquisa h2 {
     padding: 10px; 
     z-index: 2;
+    text-wrap: nowrap;
 }
 
 .box-pesquisa {
@@ -55,6 +78,8 @@ header a {
     font-size: 90%;
     width: 100%;
     display: flex;
+    overflow:visible;
+    min-width: 280px;
 }
 
 .box-input {
@@ -78,11 +103,48 @@ button {
     color: white;
     font-weight: 500;
     cursor: pointer;
+    text-wrap: nowrap;
+    padding: 5px;
 }
 
 .wave-border {
     position: absolute;
     top: 0;
     z-index: 1;
-    overflow:auto;
+    overflow: hidden;
+}
+
+.filtros {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    padding: .5%;
+    overflow: scroll;
+}
+.filtros::-webkit-scrollbar {
+    display: none;
+}
+
+.filtros button {
+    background-color: transparent;
+    color: var(--roxo);
+    font-weight: 600;
+    border: 2px solid var(--roxo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+
+}
+.filtros button i {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+main {
+    background-color: black;
+    height: 100vh;
+    margin: 0 3% 3% 3%
 }
