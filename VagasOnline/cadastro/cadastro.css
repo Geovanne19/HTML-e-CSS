@@ -16,7 +16,7 @@
 }
 
 html, body {
-    background-image: linear-gradient(var(--roxo), #0D014D);
+    background: var(--roxo);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,16 +26,15 @@ html, body {
 
 main {
     background-color: white;
-    width: 60vw;
-    height: 80vh;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    padding: 5vh 4vw;
+    padding: 3vh 2vw 80px 2vh;
 }
 
 main h1 {
     font-weight: 600;
+    padding: 10px 15px 20px 15px;
 }
 
 .tab-buttons {
@@ -49,9 +48,10 @@ main h1 {
     font-weight: 500;
     padding: 7px;
     background-color: white;
-    border-radius: 5px 5px 0 0;
+    border-radius: 15px 15px 0 0;
     cursor: pointer;
     transition: background-color .5s ease;
+    font-size: 1.1rem;
 }
 .tab-btn.active {
     background-color: #626cde44;
@@ -61,8 +61,6 @@ main h1 {
 }
 
 .tab-contents {
-    height: 100%;
-    width: 100%;
     border-radius: 0 0 5px 5px;
 }
 
@@ -73,8 +71,80 @@ main h1 {
     display: flex;
     gap: 14px;
     background-color: #626cde44;
-    padding: 16px;
-    border-radius: 0 0 10px 10px;
+    padding: 26px;
+    border-radius: 0 0 15px 10px;
     height: 100%;
+    transition: 1s ease;
+    flex-direction: column;
+}
+
+.container-inputs {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: 20px;
+}
+
+.aux {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+input {
+    padding: 7px;
+    border-color: white;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.226);
+    margin-bottom: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+input:focus {
+    outline: none;
+}
+input[type="file"] {
+    display: none;
+}
+label {
+    border: 2px dotted var(--roxo);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+label img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+label i {
+    font-size: 1.8rem;
+    color: #626CDE;
+}
+.img-curriculo {
+    border-radius: 0;
+}
+
+form {
+    position: relative;
+}
+
+form button {
+    background-color: #626CDE;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    bottom: -60px;
+    left: 25%;
+
 }
 

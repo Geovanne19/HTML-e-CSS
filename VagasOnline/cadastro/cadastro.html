@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="cadastro.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <main>
@@ -15,7 +16,49 @@
         </div> 
         <div class="tab-contents">
             <form class="content show" id="candidato">
-                candidato
+                <div class="container-inputs">
+                    <div class="aux">
+                        <p>Nome</p>
+                        <input type="text" placeholder="Nome completo">
+                    </div>
+                    <div class="aux">
+                        <p>E-mail</p>
+                        <input type="text" placeholder="Escreva seu e-mail">
+                    </div>
+                </div>
+                <div class="container-inputs">
+                    <div class="aux">
+                        <p>CPF</p>
+                        <input type="text" placeholder="___.___.___-__">
+                    </div>
+                    <div class="aux">
+                        <p>Estado</p>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="container-inputs">
+                    <div class="aux">
+                        <p>Foto de Perfil</p>
+                        <label for="foto"><img src="4675159.png" alt=""><i class='bx bx-upload'></i></label>
+                        <input type="file" id="foto">
+                    </div>
+                    <div class="aux">
+                        <p>Currículo</p>
+                        <label for="curriculo"><img class="img-curriculo" src="65032.png" alt=""><i class='bx bx-upload'></i></label>
+                        <input type="file" id="curriculo">
+                    </div>
+                </div>
+                <div class="container-inputs">
+                    <div class="aux">
+                        <p>Senha</p>
+                        <input type="password" placeholder="Crie uma senha">
+                    </div>
+                    <div class="aux">
+                        <p>Confirmar Senha</p>
+                        <input type="text" placeholder="confirme sua senha">
+                    </div>
+                </div>
+                <button>Próximo</button>
             </form>
             <form class="content" id="empresa">
                 empresa
