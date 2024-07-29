@@ -8,8 +8,25 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
+
 <body>
-    
+    <button id="btn-cadastrar-vaga"><i class='bx bx-plus'></i>Cadastrar Vaga</button>
+    <form class="cadastrar-vaga">
+        <button id="fechar"><i class='bx bx-x'></i></button>
+        <h1>Cadastrar Vaga</h1>
+        <div class="container-inputs">
+            <div class="aux">
+                <p>Cargo</p>
+                <input type="text" placeholder="Insira o cargo">
+            </div>
+            <div class="aux">
+                <p>Descrição</p>
+                <input id="" type="text" placeholder="Cole aqui uma descrição completa a respeito da vaga...">
+            </div>
+        </div>
+        <button id="btn-cadastrar-vaga2" type="submit">Cadastrar esta vaga</button>
+    </form>
+    <div class="overlay"></div>
     <header>
         <h1>Vagas Online</h1>
         <div class="botoes-header">
@@ -65,6 +82,6 @@
         <div class="vaga"></div>
         <div class="vaga"></div>
     </main>
-
+    <script src="home.js"></script>
 </body>
 </html>
