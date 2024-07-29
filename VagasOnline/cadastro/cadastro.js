@@ -17,3 +17,35 @@ const tabClicked = (tab) => {
 
 const currentActiveTab = document.querySelector('.tab-btn.active');
 tabClicked(currentActiveTab);
+
+document.getElementById('empresa').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const passwordInput = document.getElementById('senha');
+    const confirmPasswordInput = document.getElementById('confirma-senha');
+
+    if (passwordInput.value !== confirmPasswordInput.value) {
+        alert('As senhas não coincidem. Por favor, tente novamente.')
+        passwordInput.value = ''
+        confirmPasswordInput.value = ''
+        confirmPasswordInput.focus();
+    } else {
+        alert('Conta criada com sucesso!');
+    }
+});
+
+document.getElementById('candidato').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const passwordInput = document.getElementById('senha');
+    const confirmPasswordInput = document.getElementById('confirma-senha');
+
+    if (passwordInput.value !== confirmPasswordInput.value) {
+        alert('As senhas não coincidem. Por favor, tente novamente.')
+        passwordInput.value =''
+        confirmPasswordInput.value = ''
+        confirmPasswordInput.focus();
+    } else {
+        alert('Conta criada com sucesso!');
+    }
+});

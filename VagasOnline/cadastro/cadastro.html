@@ -23,7 +23,7 @@
                     </div>
                     <div class="aux">
                         <p>E-mail</p>
-                        <input type="text" placeholder="Escreva seu e-mail">
+                        <input type="text" placeholder="Insira seu e-mail">
                     </div>
                 </div>
                 <div class="container-inputs">
@@ -32,7 +32,7 @@
                         <input type="text" placeholder="___.___.___-__">
                     </div>
                     <div class="aux">
-                        <p>Estado</p>
+                        <p>CEP</p>
                         <input type="text">
                     </div>
                 </div>
@@ -51,17 +51,58 @@
                 <div class="container-inputs">
                     <div class="aux">
                         <p>Senha</p>
-                        <input type="password" placeholder="Crie uma senha">
+                        <input id="senha" type="password" placeholder="Crie uma senha">
                     </div>
                     <div class="aux">
                         <p>Confirmar Senha</p>
-                        <input type="text" placeholder="confirme sua senha">
+                        <input id="confirma-senha" type="password" placeholder="Confirme sua senha">
                     </div>
                 </div>
-                <button>Próximo</button>
+                <button type="submit">Cadastrar</button>
             </form>
+
+            <!-- ------------------------------------------------------ -->
+
             <form class="content" id="empresa">
-                empresa
+                <div class="container-inputs">
+                    <div class="aux">
+                        <p>Nome Fantasia</p>
+                        <input type="text" placeholder="Insira o nome fantasia">
+                    </div>
+                    <div class="aux">
+                        <p>Razão-Social</p>
+                        <input type="text" placeholder="Insira a Razão-Social">
+                    </div>
+                    
+                </div>
+                <div class="container-inputs">
+                    <div class="aux">
+                        <p>CNPJ</p>
+                        <input type="text" placeholder="__ ___ ___/____-__">
+                    </div>
+                    <div class="aux">
+                        <p>E-mail Coorporativo</p>
+                        <input type="text" placeholder="Insira seu e-mail coorporativo">
+                    </div>
+                </div>
+                <div class="container-inputs">
+                    <div class="aux">
+                        <p>Logotipo</p>
+                        <label for="logo"><img class="img-curriculo" src="logo.png" alt=""><i class='bx bx-upload'></i></label>
+                        <input type="file" id="logo">
+                    </div>
+                </div>
+                <div class="container-inputs">
+                    <div class="aux">
+                        <p>Senha</p>
+                        <input id="senha" type="password" placeholder="Crie uma senha">
+                    </div>
+                    <div class="aux">
+                        <p>Confirmar Senha</p>
+                        <input id="confirma-senha" type="password" placeholder="Confirme sua senha">
+                    </div>
+                </div>
+                <button type="submit">Cadastrar</button>
             </form>
         </div>
     </main>
