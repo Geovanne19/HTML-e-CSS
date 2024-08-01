@@ -114,6 +114,8 @@ label {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: white;
+    transition: background-color 0.3s ease;
 }
 label img {
     width: 60px;
@@ -152,3 +154,33 @@ form button {
     height: 105px;
 }
 
+.error-message {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.error-message ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.error-message li {
+    color: red;
+    font-size: 1.2rem;
+}
+
+/* Classe opcional para labels com arquivos selecionados */
+.label-file-selected {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
