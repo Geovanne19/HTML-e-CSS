@@ -1,0 +1,47 @@
+/* Estilos do tabuleiro */
+#chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    gap: 2px;
+    width: 408px;
+    margin: 50px auto;
+}
+
+/* Estilos das casas do tabuleiro */
+.square {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Cor das casas pretas e brancas */
+.square.black {
+    background-color: #769656;
+}
+
+.square.white {
+    background-color: #eeeed2;
+}
+
+/* Estilo das peças de xadrez */
+.piece {
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+}
+
+/* Estilo para mostrar movimentos possíveis */
+.possible-move {
+    background-color: rgba(255, 255, 0, 0.6);
+}

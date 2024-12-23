@@ -1,0 +1,86 @@
+/* Estilo básico do corpo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+#game-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#turn-info {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#restart-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#checkers-board {
+    display: grid;
+    grid-template-columns: repeat(8, 80px);
+    grid-template-rows: repeat(8, 80px);
+    gap: 2px;
+    margin: 0 auto;
+    border: 4px solid #333;
+}
+
+/* Estilo das casas do tabuleiro */
+.square {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white {
+    background-color: #f0d9b5;
+}
+
+.black {
+    background-color: #b58863;
+}
+
+/* Estilo das peças */
+.piece {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.white-piece {
+    background-color: #fff;
+    border: 2px solid #333;
+}
+
+.black-piece {
+    background-color: #333;
+    border: 2px solid #fff;
+}
+
+.king-piece {
+    background-color: gold;
+    border: 2px solid #333;
+}
